@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+/* task 1 */
+
+/* Контейнер усього списку */
+#categories {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  width: 440px;
+  padding: 24px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+/* Окремий блок категорії */
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  width: 392px;
+  padding: 16px;
+  background: #f6f6fe;
+  border-radius: 8px;
+}
+
+/* Заголовок категорії */
+.item h2 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.3333; /* 32px */
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin: 0;
+}
+
+/* Вкладений список елементів */
+.item ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Окремий елемент списку */
+.item li {
+  width: 360px;
+  height: 40px;
+  padding: 8px 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+/* task 2 */
+
+.gallery {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.gallery__item {
+  flex-basis: calc((100% - 48px) / 3);
+}
+
+.gallery__image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* task 3 */
+
+#name-input {
+  width: 360px;
+  height: 40px;
+  padding: 8px 12px;
+  border: 1px solid #dce3ea;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+h1 {
+  margin-top: 16px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+/* task 4 */
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+  width: 408px;
+  padding: 24px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.login-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 360px;
+  font-size: 14px;
+  color: #2e2f42;
+}
+
+.login-form input {
+  width: 360px;
+  height: 40px;
+  padding: 8px 12px;
+  border: 1px solid #dce3ea;
+  border-radius: 6px;
+  outline: none;
+}
+
+.login-form button {
+  width: 86px;
+  height: 40px;
+  background: #4e75ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background: #3c63f0;
+}
+
+/* task 5 */
+
+.widget {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 24px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.color {
+  font-weight: 600;
+  color: #2e2f42;
+}
+
+.change-color {
+  padding: 8px 16px;
+  background: #4e75ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
